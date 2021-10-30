@@ -2,17 +2,14 @@
 using namespace std;
 int main()
 {
-    int row=5,col=5;
-    int arr[row][col];
-    for(int i=0;i<row;i++){
-        for(int j=0;j<col;j++){
-            cin >> arr[i][j];
-        }
-    }
-    for(int i=0;i<row;i++){
-        for(int j=0;j<col;j++){
-            cout << arr[i][j]<<" ";
-        }
-        cout << endl;
-    }
+    int N,arr[10000];
+    cin >> N;
+    for(int i=0;i<N;i++)
+        cin >> arr[i];
+        sort(arr,arr+N);
+        for(int i=0;i<N;i++)
+            cout << arr[i] << " " ;
+
+
+    return 0;
 }
